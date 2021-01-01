@@ -1,0 +1,525 @@
+INFO:root:path=dev
+INFO:root:Checking dev/e3.ret
+INFO:root:Diff between reference and your output for dev/e3.ret
+INFO:root:
+--- reference
++++ your-output
+@@ -1 +1 @@
+-b'1'
++b'0'
+INFO:root:Checking dev/charvals-3.out
+INFO:root:dev/charvals-3.out Correct!
+INFO:root:Checking dev/assignmismatch-intofchar-ok.out
+INFO:root:dev/assignmismatch-intofchar-ok.out Correct!
+INFO:root:Checking dev/charescapes-8.out
+INFO:root:dev/charescapes-8.out Correct!
+INFO:root:Checking dev/stringescapes-6.out
+INFO:root:Diff between reference and your output for dev/stringescapes-6.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/stringescapequote.out
+INFO:root:Diff between reference and your output for dev/stringescapequote.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charprint.out
+INFO:root:dev/charprint.out Correct!
+INFO:root:Checking dev/charvals-6.out
+INFO:root:dev/charvals-6.out Correct!
+INFO:root:Checking dev/charexpr-1.out
+INFO:root:dev/charexpr-1.out Correct!
+INFO:root:Checking dev/e4.ret
+INFO:root:dev/e4.ret Correct!
+INFO:root:Checking dev/charvals-8.out
+INFO:root:dev/charvals-8.out Correct!
+INFO:root:Checking dev/charescapevals-5.out
+INFO:root:dev/charescapevals-5.out Correct!
+INFO:root:Checking dev/default-passes.out
+INFO:root:dev/default-passes.out Correct!
+INFO:root:Checking dev/charvals-7.out
+INFO:root:dev/charvals-7.out Correct!
+INFO:root:Checking dev/charescapevals-3.out
+INFO:root:dev/charescapevals-3.out Correct!
+INFO:root:Checking dev/charvals-11.out
+INFO:root:dev/charvals-11.out Correct!
+INFO:root:Checking dev/charescapevals-8.out
+INFO:root:dev/charescapevals-8.out Correct!
+INFO:root:Checking dev/charvals-5.out
+INFO:root:dev/charvals-5.out Correct!
+INFO:root:Checking dev/stringescapes-8.out
+INFO:root:Diff between reference and your output for dev/stringescapes-8.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charescapes-2.out
+INFO:root:dev/charescapes-2.out Correct!
+INFO:root:Checking dev/charvar.out
+INFO:root:dev/charvar.out Correct!
+INFO:root:Checking dev/stringescapes-4.out
+INFO:root:Diff between reference and your output for dev/stringescapes-4.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charescapevals-6.out
+INFO:root:dev/charescapevals-6.out Correct!
+INFO:root:Checking dev/charvals-2.out
+INFO:root:dev/charvals-2.out Correct!
+INFO:root:Checking dev/charescapes-1.out
+INFO:root:dev/charescapes-1.out Correct!
+INFO:root:Checking dev/charescapevals-1.out
+INFO:root:dev/charescapevals-1.out Correct!
+INFO:root:Checking dev/charescapes-9.out
+INFO:root:dev/charescapes-9.out Correct!
+INFO:root:Checking dev/stringescapes-5.out
+INFO:root:Diff between reference and your output for dev/stringescapes-5.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/stringconst-1.out
+INFO:root:Diff between reference and your output for dev/stringconst-1.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charexprprint.out
+INFO:root:dev/charexprprint.out Correct!
+INFO:root:Checking dev/charescapes-3.out
+INFO:root:dev/charescapes-3.out Correct!
+INFO:root:Checking dev/externprintstring.out
+INFO:root:Diff between reference and your output for dev/externprintstring.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,13 +9,15 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_FUNC func'
+ b'T_WHITESPACE  '
+ b'T_ID main'
+@@ -25,21 +27,24 @@
+ b'T_VOID void'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_VAR var'
+ b'T_WHITESPACE  '
+ b'T_ID x'
+ b'T_WHITESPACE  '
+ b'T_INTTYPE int'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_ID x'
+ b'T_WHITESPACE  '
+ b'T_ASSIGN ='
+ b'T_WHITESPACE  '
+ b'T_INTCONSTANT 1'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_RCB }'
+ b'T_WHITESPACE \\n'
+ b'T_RCB }'
+INFO:root:Checking dev/stringconst-2.out
+INFO:root:Diff between reference and your output for dev/stringconst-2.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/e1.ret
+INFO:root:Diff between reference and your output for dev/e1.ret
+INFO:root:
+--- reference
++++ your-output
+@@ -1 +1 @@
+-b'1'
++b'0'
+INFO:root:Checking dev/stringescapes-1.out
+INFO:root:Diff between reference and your output for dev/stringescapes-1.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charvals-10.out
+INFO:root:dev/charvals-10.out Correct!
+INFO:root:Checking dev/e2.ret
+INFO:root:Diff between reference and your output for dev/e2.ret
+INFO:root:
+--- reference
++++ your-output
+@@ -1 +1 @@
+-b'1'
++b'0'
+INFO:root:Checking dev/charexpr-3.out
+INFO:root:dev/charexpr-3.out Correct!
+INFO:root:Checking dev/stringescapes-3.out
+INFO:root:Diff between reference and your output for dev/stringescapes-3.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charvals-9.out
+INFO:root:dev/charvals-9.out Correct!
+INFO:root:Checking dev/charescapevals-4.out
+INFO:root:dev/charescapevals-4.out Correct!
+INFO:root:Checking dev/stringescapes-9.out
+INFO:root:Diff between reference and your output for dev/stringescapes-9.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charescapes-5.out
+INFO:root:dev/charescapes-5.out Correct!
+INFO:root:Checking dev/gcd.out
+INFO:root:Diff between reference and your output for dev/gcd.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,13 +9,15 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID GreatestCommonDivisor'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_VAR var'
+ b'T_WHITESPACE  '
+ b'T_ID a'
+@@ -26,7 +28,8 @@
+ b'T_WHITESPACE  '
+ b'T_INTCONSTANT 10'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_VAR var'
+ b'T_WHITESPACE  '
+ b'T_ID b'
+@@ -37,7 +40,9 @@
+ b'T_WHITESPACE  '
+ b'T_INTCONSTANT 20'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_FUNC func'
+ b'T_WHITESPACE  '
+ b'T_ID main'
+@@ -47,7 +52,8 @@
+ b'T_INTTYPE int'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_VAR var'
+ b'T_WHITESPACE  '
+ b'T_ID x'
+@@ -60,21 +66,24 @@
+ b'T_WHITESPACE  '
+ b'T_INTTYPE int'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_ID x'
+ b'T_WHITESPACE  '
+ b'T_ASSIGN ='
+ b'T_WHITESPACE  '
+ b'T_ID a'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_ID y'
+ b'T_WHITESPACE  '
+ b'T_ASSIGN ='
+ b'T_WHITESPACE  '
+ b'T_ID b'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_ID z'
+ b'T_WHITESPACE  '
+ b'T_ASSIGN ='
+@@ -87,19 +96,26 @@
+ b'T_ID y'
+ b'T_RPAREN )'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n        '
+-b'T_COMMENT // print_int is part of the standard input-output library\\n'
+-b'T_WHITESPACE         '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
++b'T_COMMENT // print_int is part of the standard input-output library'
++b''
++b'T_WHITESPACE  '
+ b'T_ID print_int'
+ b'T_LPAREN ('
+ b'T_ID z'
+ b'T_RPAREN )'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_RCB }'
+-b'T_WHITESPACE \\n\\n    '
+-b'T_COMMENT // function that computes the greatest common divisor\\n'
+-b'T_WHITESPACE     '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
++b'T_COMMENT // function that computes the greatest common divisor'
++b''
++b'T_WHITESPACE  '
+ b'T_FUNC func'
+ b'T_WHITESPACE  '
+ b'T_ID gcd'
+@@ -117,7 +133,8 @@
+ b'T_INTTYPE int'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_IF if'
+ b'T_WHITESPACE  '
+ b'T_LPAREN ('
+@@ -130,19 +147,20 @@
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+ b'T_WHITESPACE  '
+-b'T_RETURN return'
++b'T_ID return'
+ b'T_LPAREN ('
+ b'T_ID a'
+ b'T_RPAREN )'
+ b'T_SEMICOLON ;'
+ b'T_WHITESPACE  '
+ b'T_RCB }'
+-b'T_WHITESPACE \\n        '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_ELSE else'
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+ b'T_WHITESPACE  '
+-b'T_RETURN return'
++b'T_ID return'
+ b'T_LPAREN ('
+ b'T_WHITESPACE  '
+ b'T_ID gcd'
+@@ -161,7 +179,8 @@
+ b'T_SEMICOLON ;'
+ b'T_WHITESPACE  '
+ b'T_RCB }'
+-b'T_WHITESPACE \\n    '
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE  '
+ b'T_RCB }'
+ b'T_WHITESPACE \\n'
+ b'T_RCB }'
+INFO:root:Checking dev/charescapevals-7.out
+INFO:root:dev/charescapevals-7.out Correct!
+INFO:root:Checking dev/charescapes-7.out
+INFO:root:dev/charescapes-7.out Correct!
+INFO:root:Checking dev/stringescapes-2.out
+INFO:root:Diff between reference and your output for dev/stringescapes-2.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charescapevals-2.out
+INFO:root:dev/charescapevals-2.out Correct!
+INFO:root:Checking dev/stringescapes-7.out
+INFO:root:Diff between reference and your output for dev/stringescapes-7.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/returnmismatch-intofchar-ok.out
+INFO:root:Diff between reference and your output for dev/returnmismatch-intofchar-ok.out
+INFO:root:
+--- reference
++++ your-output
+@@ -14,7 +14,7 @@
+ b'T_WHITESPACE  '
+ b'T_LCB {'
+ b'T_WHITESPACE \\n\t\t'
+-b'T_RETURN return'
++b'T_ID return'
+ b'T_WHITESPACE  '
+ b'T_LPAREN ('
+ b"T_CHARCONSTANT 'x'"
+INFO:root:Checking dev/charescapevals-9.out
+INFO:root:dev/charescapevals-9.out Correct!
+INFO:root:Checking dev/charvals-4.out
+INFO:root:dev/charvals-4.out Correct!
+INFO:root:Checking dev/charvals-12.out
+INFO:root:dev/charvals-12.out Correct!
+INFO:root:Checking dev/charescapes-6.out
+INFO:root:dev/charescapes-6.out Correct!
+INFO:root:Checking dev/charvals-1.out
+INFO:root:dev/charvals-1.out Correct!
+INFO:root:Checking dev/stringconst-3.out
+INFO:root:Diff between reference and your output for dev/stringconst-3.out
+INFO:root:
+--- reference
++++ your-output
+@@ -9,7 +9,8 @@
+ b'T_WHITESPACE  '
+ b'T_VOID void'
+ b'T_SEMICOLON ;'
+-b'T_WHITESPACE \\n\\n'
++b'T_WHITESPACE \\n'
++b'T_WHITESPACE \\n'
+ b'T_PACKAGE package'
+ b'T_WHITESPACE  '
+ b'T_ID Test'
+INFO:root:Checking dev/charexpr-2.out
+INFO:root:dev/charexpr-2.out Correct!
+INFO:root:Checking dev/charvals-13.out
+INFO:root:dev/charvals-13.out Correct!
+INFO:root:Checking dev/charescapes-4.out
+INFO:root:dev/charescapes-4.out Correct!
