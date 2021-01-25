@@ -1,0 +1,111 @@
+Grammar
+
+    0 $accept: start $end
+
+    1 start: program
+
+    2 program: extern_list decafpackage
+
+    3 extern_list: /* empty */
+
+    4 decafpackage: T_PACKAGE T_ID T_LCB T_RCB
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+error (256)
+T_PACKAGE (258) 4
+T_LCB (259) 4
+T_RCB (260) 4
+T_ID (261) 4
+
+
+Nonterminals, with rules where they appear
+
+$accept (7)
+    on left: 0
+start (8)
+    on left: 1, on right: 0
+program (9)
+    on left: 2, on right: 1
+extern_list (10)
+    on left: 3, on right: 2
+decafpackage (11)
+    on left: 4, on right: 2
+
+
+state 0
+
+    0 $accept: . start $end
+
+    $default  reduce using rule 3 (extern_list)
+
+    start        go to state 1
+    program      go to state 2
+    extern_list  go to state 3
+
+
+state 1
+
+    0 $accept: start . $end
+
+    $end  shift, and go to state 4
+
+
+state 2
+
+    1 start: program .
+
+    $default  reduce using rule 1 (start)
+
+
+state 3
+
+    2 program: extern_list . decafpackage
+
+    T_PACKAGE  shift, and go to state 5
+
+    decafpackage  go to state 6
+
+
+state 4
+
+    0 $accept: start $end .
+
+    $default  accept
+
+
+state 5
+
+    4 decafpackage: T_PACKAGE . T_ID T_LCB T_RCB
+
+    T_ID  shift, and go to state 7
+
+
+state 6
+
+    2 program: extern_list decafpackage .
+
+    $default  reduce using rule 2 (program)
+
+
+state 7
+
+    4 decafpackage: T_PACKAGE T_ID . T_LCB T_RCB
+
+    T_LCB  shift, and go to state 8
+
+
+state 8
+
+    4 decafpackage: T_PACKAGE T_ID T_LCB . T_RCB
+
+    T_RCB  shift, and go to state 9
+
+
+state 9
+
+    4 decafpackage: T_PACKAGE T_ID T_LCB T_RCB .
+
+    $default  reduce using rule 4 (decafpackage)

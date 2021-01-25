@@ -15,17 +15,39 @@ int yyerror(char *);
 
 %token <rvalue> NUMBER
 %token <lvalue> NAME 
+%left '+' '-'
+%left '*' '/'
+%left UMINUS
 
 %type <rvalue> expression
+%type <rvalue> realNum
+
+
+
 
 %%
-statement: NAME '=' expression { symtbl[$1] = $3; issym[$1] = true; }
-         | expression  { printf("%d\n", $1); }
+statementList: statement|statementList statement;
+statement: NAME '=' expression { symtbl[$1] = $3; issym[$1] = true; printf("%c = %d\n", $1 + 'a', $3); }
+         | expression  { printf("%d\n", $1);  }
          ;
 
-expression: expression '+' NUMBER { $$ = $1 + $3; }
-         | expression '-' NUMBER { $$ = $1 - $3; }
-         | NUMBER { $$ = $1; }
+expression:realNum
+         | expression '+' expression { $$ = $1 + $3; }
+         | expression '-' expression { $$ = $1 - $3; }
+         | expression '*' expression { $$ = $1 * $3; }
+         | expression '/' expression { $$ = $1 / $3; }
+         | '-' expression %prec UMINUS { $$ = -$2; }
+         | '(' expression ')' { $$ = $2; } 
          ;
+
+realNum: NUMBER { $$ = $1; }
+      | NAME {
+        if (!issym[$1]){
+          printf("Undefined symbol:%c \n", 'a' + $1);
+        }else{
+          $$ = symtbl[$1];
+        }
+      }
 %%
+
 

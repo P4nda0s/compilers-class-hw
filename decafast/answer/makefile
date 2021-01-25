@@ -12,7 +12,7 @@ all: $(targets) $(cpptargets)
 $(targets): %: %.y
 	@echo "compiling yacc file:" $<
 	@echo "output file:" $@
-	bison -o$@.tab.c -d $<
+	bison -v -o$@.tab.c -d $<
 	flex -o$@.lex.c $@.lex
 	gcc -o $(bindir)/$@ $@.tab.c $@.lex.c -l$(yacclib) -l$(lexlib) -lm
 	$(rm) $@.tab.c $@.tab.h $@.lex.c
@@ -20,10 +20,10 @@ $(targets): %: %.y
 $(cpptargets): %: %.y
 	@echo "compiling cpp yacc file:" $<
 	@echo "output file:" $@
-	bison -b $@ -d $<
+	bison -v -b $@ -d $<
 	$(mv) $@.tab.c $@.tab.cc
 	flex -o$@.lex.cc $@.lex
-	g++ -o $(bindir)/$@ $@.tab.cc $@.lex.cc -l$(yacclib) -l$(lexlib) -lm
+	g++ -o $(bindir)/$@ $@.tab.cc $@.lex.cc -l$(yacclib) -l$(lexlib) -lm -Wc++11-extensions
 	$(rm) $@.tab.h $@.tab.cc $@.lex.cc
 
 clean:

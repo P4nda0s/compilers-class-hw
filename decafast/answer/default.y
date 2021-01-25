@@ -15,9 +15,9 @@ bool printAST = true;
 
 using namespace std;
 
+//%define parse.error verbose
 %}
 
-%define parse.error verbose
 
 %union{
     class decafAST *ast;
