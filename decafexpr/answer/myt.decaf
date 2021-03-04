@@ -1,0 +1,12 @@
+extern func print_int(int) void;
+extern func eat(int) void;
+package zwh {
+    var name string = "\"";
+    var Age int = 3;
+    var Arr [4] int;
+    var ac int;
+    func main(a int, b int) int
+    {
+        a = 0x123;
+    }
+}

@@ -53,13 +53,13 @@ import tempfile
 gen_name_prefix = "llvm-run" # filename prefix to use if we have to make up a name for output
 source_extension = ".decaf"
 input_extension = ".in"
-default_codegen = "answer/decafcomp"
+default_codegen = "/Users/pandaos/Projects/compilers-class-hw/decafexpr/answer/decafexpr"
 default_stdlib = "answer/decaf-stdlib.c"
 codegen_llvm_out_source = "err"
 codegen_env_var = "CODEGEN"
 stdlib_env_var = "STDLIB"
 
-llvm_config = os.environ.get('LLVMCONFIG') or 'llvm-config'
+llvm_config = '/Users/pandaos/llvm-project/build/bin/llvm-config'
 llc_call = os.path.join(subprocess.check_output([llvm_config, "--bindir"]).strip().decode('utf-8'), 'llc')
 llvm_as_call = os.path.join(subprocess.check_output([llvm_config, "--bindir"]).strip().decode('utf-8'), 'llvm-as')
 llc = os.environ.get('LCC') or llc_call

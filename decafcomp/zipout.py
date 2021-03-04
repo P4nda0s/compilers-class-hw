@@ -22,7 +22,7 @@ class ZipOutput:
         self.use_llvm_run = opts.use_llvm_run # use the llvm_run program to compile the output using LLVM
         self.llvm_run = opts.llvm_run # use this program to compile the output using LLVM and execute that binary to get stdout, stderr
         self.stdlib = opts.stdlib # standard library source code to link with output when creating the binary
-        self.answer_dir = opts.answer_dir # name of directory where run_program exists
+        self.answer_dir = "/Users/pandaos/Projects/compilers-class-hw/decafexpr/answer" # name of directory where run_program exists
         self.testcase_dir = opts.testcase_dir # directory where testcases are placed
         self.output_dir = opts.output_dir # directory for output files of your program
         self.file_suffix = opts.file_suffix # file suffix for testcases
@@ -142,7 +142,7 @@ class ZipOutput:
 if __name__ == '__main__':
     #zipout_dir = os.path.dirname(os.path.abspath(sys.argv[0]))
     optparser = optparse.OptionParser()
-    optparser.add_option("-r", "--run", dest="run_program", default='decafcomp', help="run this program against testcases [default: decafcomp]")
+    optparser.add_option("-r", "--run", dest="run_program", default='decafexpr', help="run this program against testcases [default: decafcomp]")
     optparser.add_option("--use-llvm-run", dest="use_llvm_run", action="store_true", default=True, help="run this program to compile using LLVM tools [default: True]")
     optparser.add_option("-x", "--llvmrun", dest="llvm_run", default='llvm-run', help="run this program to compile using this binary to call LLVM tools [default: llvm-run]")
     optparser.add_option("-s", "--stdlib", dest="stdlib", default='decaf-stdlib.c', help="optional standard library to link during llvm run [default: decaf-stdlib.c]")

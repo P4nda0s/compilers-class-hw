@@ -1,5 +1,5 @@
-llvmconfig:=llvm-config
-cppflags=-Wno-deprecated-register
+llvmconfig:=/Users/pandaos/llvm-project/build/bin/llvm-config
+cppflags=-Wno-deprecated-register -std=c++17 
 lexlib=l
 yacclib=y
 llvmlibs=-lz -lncurses -ldl -lpthread -fcxx-exceptions

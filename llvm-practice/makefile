@@ -1,4 +1,4 @@
-llvmconfig:=llvm-config
+llvmconfig:=/Users/pandaos/llvm-project/build/bin/llvm-config
 cppflags=-Wno-deprecated-register
 lexlib=l
 yacclib=y
